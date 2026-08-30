@@ -2,7 +2,7 @@
 
 An end-to-end data analytics project built from raw match data — not a pre-cleaned Kaggle dataset. Every step, from sourcing to the final dashboard, was built and debugged from scratch.
 
-**[Add a dashboard screenshot or GIF here once exported]**
+![Dashboard Overview](output/overview.png)
 
 ---
 
