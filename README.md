@@ -87,17 +87,16 @@ Pages are cross-linked with in-dashboard navigation buttons.
 ## Repo Structure
 
 ```
-ipl-analytics/
+ipl-ball-by-ball-analytics/
 ├── README.md
 ├── etl/
-│   ├── filter_ipl_matches.py     # filters Cricsheet's full archive to IPL matches
-│   └── parse_ipl_matches.py      # parses raw JSON into normalized CSVs
+│   ├── filter_ipl_matches.py   # filters Cricsheet's full archive to IPL matches
+│   └── parse_ipl_matches.py    # parses raw JSON into normalized CSVs
 ├── sql/
-│   ├── schema.sql                 # table definitions
-│   ├── views.sql                  # matches_clean, bowler_death_stats
-│   └── analysis_queries.sql       # phase-wise, venue, bowler queries
-├── outputs/
-│   └── (query result CSVs, dashboard screenshots)
+│   └── ipl_full_sql.sql        # schema, cleaning views and all analysis queries
+└── output/
+    ├── ipl-analytics.pbix      # 4-page Power BI dashboard
+    └── *.png                   # dashboard screenshots
 ```
 
 *(Note: the raw Cricsheet archive and full deliveries table aren't included in this repo due to size — see [Data Source](#data-source) to regenerate them.)*
